@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tastenkürzel "a" ruft Link auf</title>
+  <script src="../assets/javascript/jquery-1.12.0.min.js"></script>
+  <script src="../assets/javascript/main.js"></script>
+  <link rel="stylesheet" href="../assets/stylesheets/tests.css" />
+</head>
+<body>
+  <header>
+  <h1>Tastenkürzel "a" ruft Link auf</h1>
+  </header>
+  <main>
+    <a href="page.html" id="link">Ein Link, welcher durch Tastenkürzel "a" aufgerufen wird.</a>
+    <script>
+      // JavaScript, um den Link aufzurufen, wenn die Taste "A" gedrückt wird
+      document.addEventListener('keydown', function(event) {
+          if (event.key === 'a') {
+              window.location.href = document.getElementById('link').href;
+          }
+      });
+  </script>
+  </main>
+</body>
+</html>
