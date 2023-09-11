@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sehtest mit alternativem Text, welcher die Frage vorwegnimmt</title>
+  <script src="../assets/javascript/jquery-1.12.0.min.js"></script>
+  <script src="../assets/javascript/main.js"></script>
+  <link rel="stylesheet" href="../assets/stylesheets/tests.css" />
+</head>
+<body>
+  <header>
+  <h1>Sehtest mit alternativem Text, welcher die Frage vorwegnimmt</h1>
+  </header>
+  <main>
+    <img alt="Sehtest, welcher eine 182 darstellt, wovon 1 und 2 grün und die 8 in blau dargestellt ist." src="../assets/test_images/sehtest.webp" />
+    <form><fieldset>
+        <legend>Welche Ziffern oder Buchstaben sehen sie auf dem darüber liegendem Bild?</legend>
+        <label for="antwort_8">Ich sehe eine 8.</label>
+        <input id="antwort_8" name="antwort_8" type="checkbox" value="false" />
+        <label for="antwort_12">Ich sehe eine 12.</label>
+        <input id="antwort_12" name="antwort_12" type="checkbox" value="false" />
+        <label for="antwort_anders">Ich sehe etwas anderes.</label>
+        <input id="antwort_anders" name="antwort_anders" type="checkbox" value="true" />
+        </fieldset></form>
+  </main>
+</body>
+</html>
